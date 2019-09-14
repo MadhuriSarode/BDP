@@ -1,0 +1,74 @@
+The map function
+
+For each element of M, do
+
+Produce (key,value) pairs as ( (i,k),(M,j,mij)) , for k = 1,2 … up to number of columns of N For each element of n, do
+
+Produce (key,value) pairs as ( (i,k),(N,j,njk)) , for I = 1,2 … up to number of rows of M
+
+Return set of (key,value) pairs that each key ,(i,k) , has a list with values (M,j,mij) and (N,j,njk) for all possible values of j
+
+The Reduce function
+
+For each key(i,k) do
+
+Sort values begin with M by j in listM
+
+Sort values begin with N by j in listN
+
+Multiply mij and nik for ‘j’th value of each list
+
+Sum up mij * njk
+
+Return (i,k) , Summation of mij * njk
+
+  1 2 3
+M=
+  4 5 6
+  
+  
+   7  10
+N= 8  11
+   9  12
+   
+   
+For map task, the key value pairs are as follows
+(i,k),(M,j,mij)
+
+m11
+(1,1),(M,1,1) for k=1
+m12
+(1,1),(M,2,2) for k=2
+
+
+(i,k),(N,j,njk))
+n11
+(1,1),(N,1,7) for i=1
+n21
+(1,1),(N,2,8) for i=1
+
+
+The key value pairs are generated as above and the reducer 
+
+
+Reduce task sorts values begin with M in one list and values begin with N in another list as follows:
+
+list_M = [(M,1,1),(M,2,2),(M,3,3)] 
+
+list_N = [(N,1,7),(N,2,8),(N,3,9)],
+
+
+
+    1*7+2*8+3*9    1*10+2*11+3*12           58    64
+p =                                     =
+    4*7+5*8+6*9    4*10+5*11+6*12           139   154
+
+
+
+
+
+
+
+
+
+
