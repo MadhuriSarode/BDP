@@ -1,7 +1,7 @@
 Genre,MovieName,positive_tweet_count,negetive_tweet_count,neutral_tweet_count,total_tweet_count
 ComedyMovie,fightingwithmyfamily,25,0,12,37
-KidsMovie,toys,238,9,360,607
-ComedyMovie,thesecretlifeofpets,1,0,7,8
+KidsMovie,toystory,238,9,360,607
+ComedyMovie,thesecretlifeofpets2,1,0,7,8
 SciFiMovie,thewanderingearth,6,0,5,11
 ActionMovie,johnwick3,90,3,123,216
 ActionMovie,joker,105,1,325,431
