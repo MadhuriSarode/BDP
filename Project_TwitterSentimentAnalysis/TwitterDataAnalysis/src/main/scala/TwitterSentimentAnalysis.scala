@@ -227,13 +227,14 @@ object TwitterSentimentAnalysis{
       val fileConclusion = new File(FinalConclusionFile)
       fileConclusion.createNewFile()
 
-      val movieNameAlone = movieName.substring(0,movieName.length-4).split("_")
+      val movieNameAlone = movieName.split("_")
+     // println("movieNameAlone = "+movieNameAlone.toString)
       var csvMovieNameGenre=""
       for(j <- movieNameAlone)
       {
         csvMovieNameGenre+=j+","
       }
-      val inCSVFormat =csvMovieNameGenre+","+positiveReviews+","+negetiveReviews+","+neutralReviews+","+totalReviews
+      val inCSVFormat =csvMovieNameGenre+positiveReviews+","+negetiveReviews+","+neutralReviews+","+totalReviews
       writeToFile(inCSVFormat,fileConclusioncsv)
       if (neutralReviews > positiveReviews || neutralReviews > negetiveReviews) {
 
