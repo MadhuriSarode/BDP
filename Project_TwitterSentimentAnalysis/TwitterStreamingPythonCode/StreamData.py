@@ -5,10 +5,10 @@ import sys
 from urlextract import URLExtract
 
 
-access_token = "1039581020352389123-GZQrhexfH9BITWz3SLMvuGT8i4wbd6"
-access_secret = "pIPjqiQUlbNFbMj2gKi3NYfXn08ZiEjhsmSt0LOG1LuoD"
-consumer_key = "SNE5jJmuxsrss3K5CqVoRzNjQ" 
-consumer_secret = "8vlmOWYM6iM7Q6VQZffizvcCq34EQPUKeOvijsq7pXwCMjPjEn"
+access_token = ""
+access_secret = ""
+consumer_key = "" 
+consumer_secret = ""
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
